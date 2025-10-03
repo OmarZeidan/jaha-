@@ -1,0 +1,113 @@
+import logo from '@/images/logos/rumi-logo.svg'
+import imageHero from './hero-2.jpg'
+import imageHero1 from './hero.webp'
+import imageHero2 from './hero-1.jpg'
+import { InstagramIcon, GoogleIcon } from '@/components/icons.tsx'
+import Image from 'next/image'
+
+export const brand = {
+  name: 'Rumi',
+  title: 'Rumi Café',
+  description:
+    'A neighborhood café in the heart of Amman, where tea, coffee, and community have shaped a daily ritual since 2013',
+  summary: [
+    'Rumi began in Jabal Al Lweibdeh as one of Amman’s first true neighborhood cafés.',
+    'It introduced the quiet charm of sidewalk cafés, offering presence, warmth, and a sense of belonging.',
+    'Built around good coffee, tea, and conversation, Rumi grew into a daily rhythm for many in the city.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2013',
+  service: 'True neighborhood café',
+  review: {
+    author: { name: 'Khalid Abdelkhaliq', source: 'Google' },
+    content:
+      'Rumi Café is a true Jabal Al-Weibdeh classic gem a place with history, character, and a reputation as a gathering spot for thinkers, creatives, and lively conversations. The coffee is excellent rich, flavorful, and always well prepared and pairs perfectly with their freshly baked goods, from hearty sandwiches to tempting sweets. The vibe is relaxed, with friendly staff and a casual, almost self-serve style that makes you feel right at home. Sunlight pours through the windows, and the patio is a perfect spot to enjoy your cup while taking in the neighborhood’s charm.',
+  },
+  profiles: [
+    {
+      title: 'Instagram',
+      href: 'https://www.instagram.com/rumi.amman/?hl=en',
+      icon: InstagramIcon,
+    },
+    {
+      title: 'Google',
+      href: 'https://www.google.com/search?sca_esv=3625eca33e5fb376&kgmid=/g/11b6dn4nwn&q=Rumi+Cafe+and+Deli&shndl=30&shem=lcuae,lsptbl1,uaasie&source=sh/x/loc/uni/m1/1&kgs=366f891b5d1569e7&utm_source=lcuae,lsptbl1,uaasie,sh/x/loc/uni/m1/1',
+      icon: GoogleIcon,
+    },
+  ],
+
+}
+
+export const metadata = {
+  title: `${brand.name}`,
+  description: brand.description,
+}
+
+## Our Story
+
+Established in 2013 in Jabal Al Lweibdeh, Rumi Café quickly became one of Amman’s most
+recognizable neighborhood cafés. In 2019 it expanded to Abdoun, and in July 2025 Rumi
+Deli opened just steps away from the original café, bringing artisan bread and specialty
+sandwiches to the city. Known for its Mediterranean-inspired design, carefully crafted tea
+and coffee, and a strong sense of community, Rumi has grown into a daily ritual for many in
+Amman.
+
+Rumi Café began in 2013 as a response to something simple yet missing in the city: a true
+neighborhood café. At the time, the idea of a casual walk-in café with character and intention
+was still uncommon. Rumi brought the quiet charm of sidewalk cafés to Jabal Al Lweibdeh,
+offering a space that felt grounded, warm, and quietly elegant.
+
+The vision was never about trends. It was about creating a place where people could gather
+over a well-made cup of coffee or tea. A place that allowed for pause, conversation, and the
+kind of presence that often gets lost in the pace of city life.
+
+Located in one of Amman’s most vibrant artistic neighborhoods, Rumi quickly became a
+local landmark. Its Mediterranean-inspired interiors, sun-drenched corners, and balanced
+simplicity echoed the creative spirit of the area. The atmosphere was designed to make
+people feel welcome and at ease. Over time, Rumi grew into more than a café. It became a
+daily rhythm for many and a backdrop for countless shared moments.
+
+<div className="max-w-2xl">
+  <Image src={imageHero} alt="" unoptimized />
+</div>
+
+Coffee and tea are at the heart of the Rumi experience. From Turkish coffee and cardamom
+black tea to cold brew and carefully sourced herbal blends, each cup is prepared with
+attention and care. Alongside our core offerings, we serve seasonal drinks inspired by
+regional ingredients, whether it is a lumi iced tea in summer or a turmeric latte in winter.
+
+Our cakes are a signature part of the café, baked in-house every day. The selection changes
+often, highlighting fruits, nuts, and flavors that reflect the season. The food menu is small
+and intentional, with a selection of Mediterranean and Levantine-inspired dishes. Each item
+is made with quality ingredients, prepared simply, and served in a way that invites presence
+and conversation.
+
+<div className="max-w-2xl">
+  <Image src={imageHero1} alt="" unoptimized />
+</div>
+
+In July 2025, we opened Rumi Deli just steps away from the original café. This space
+expanded Rumi’s identity into the world of artisan baking and specialty sandwiches. The deli
+is built around a central idea: bread as craft. We bake our own loaves daily using natural
+fermentation and a slow process that brings depth and texture to every bite. The sandwiches
+and baked goods are inspired by local flavors, like zaatar mutabbaq, sourdough manaqeesh
+with local white cheese, and labneh with makdoos and olives.
+
+<div className="max-w-2xl">
+  <Image src={imageHero2} alt="" unoptimized />
+</div>
+
+Rumi remains true to what it set out to be: a place that values good ingredients, thoughtful
+design, and real human connection. A café that continues to evolve while staying rooted in
+the rhythm of the neighborhood.
+
+## The Spirit of Rumi
+
+<TagList>
+  <TagListItem>A café born from the rhythm of the neighborhood</TagListItem>
+  <TagListItem>Levantine flavors, artisan bread & seasonal cakes</TagListItem>
+  <TagListItem>Specialty teas & coffee prepared with care</TagListItem>
+  <TagListItem>Design inspired by Mediterranean warmth</TagListItem>
+  <TagListItem>A daily ritual of pause, conversation & presence</TagListItem>
+</TagList>
