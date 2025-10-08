@@ -139,23 +139,26 @@ function TimeLine() {
       ></SectionIntro>
       <Container className="mt-16">
         <ol className="relative space-y-8 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-gray-200">
-          {milestones.map((milestones) => {
+          {milestones.map((milestone) => {
             return (
-              <li className="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+              <li
+                className="group relative grid grid-cols-2 odd:-me-3 even:-ms-3"
+                key={milestone.year}
+              >
                 <div className="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last">
                   <span className="size-3 shrink-0 rounded-full bg-rumiPrimary"></span>
 
                   <div className="-mt-2">
                     <time className="text-xs/none font-black text-gray-700 underline">
-                      {milestones.year}
+                      {milestone.year}
                     </time>
 
                     <h3 className="text-lg font-bold text-gray-900">
-                      {milestones.title}
+                      {milestone.title}
                     </h3>
 
                     <p className="mt-0.5 text-sm text-gray-700">
-                      {milestones.description}
+                      {milestone.description}
                     </p>
                   </div>
                 </div>
