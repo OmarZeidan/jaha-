@@ -80,10 +80,6 @@ export interface CaseStudy {
   }
 }
 
-export function loadArticles() {
-  return loadEntries<Article>('blog', 'article')
-}
-
 export function loadCaseStudies() {
   return loadEntries<CaseStudy>('work', 'caseStudy')
 }

@@ -1,6 +1,9 @@
 import logo from '@/images/logos/oliva-logo.svg'
 import imageHero from './hero.webp'
+import imageFirst from './oliva-front.jpg'
+import imageTeam from './oliva-team.jpg'
 import { InstagramIcon, GoogleIcon } from '@/components/icons.tsx'
+import Image from 'next/image'
 
 export const brand = {
   name: 'Oliva',
@@ -39,6 +42,10 @@ export const metadata = {
   description: brand.description,
 }
 
+<div className="max-w-2xl">
+  <Image src={imageFirst} alt="Oliva Restaurant" />
+</div>
+
 ## Our Story
 
 Since 2011, Oliva Italian Restaurant in Jabal Al Lweibdeh has been serving authentic Italian cuisine in the heart of Amman, Jordan. Known for its clay oven pizzas, fresh pastas, and family-style atmosphere, Oliva is one of the city’s first Italian kitchens rooted in both tradition and local rhythm. Over the years, it has become a trusted destination for those seeking honest Italian cooking prepared with quality ingredients and care.
@@ -54,6 +61,10 @@ Over time, Oliva evolved. The menu expanded and deepened, guided by the same pri
 The space reflects the food: modest, grounded, and designed to feel lived in. Wood, open shelving, and warm lighting create a natural flow between kitchen and dining room. The atmosphere is easy but intentional, a place where weekday lunches turn into long conversations, and family dinners feel unhurried and comforting.
 
 Oliva remains true to what it set out to be. A place where Italian craft meets local soul. A neighborhood restaurant that does not chase trends but stays focused on what matters. Good food, made well, and shared generously.
+
+<div className="max-w-2xl">
+  <Image src={imageTeam} alt="Oliva Restaurant's Team" />
+</div>
 
 ## The Essence of Oliva
 

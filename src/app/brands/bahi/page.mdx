@@ -1,6 +1,9 @@
 import logo from '@/images/logos/bahi-logo.svg'
 import imageHero from './hero.webp'
+import imageFirst from './bahi-3.jpg'
+import imageBahi from './bahi-2.jpg'
 import { InstagramIcon, GoogleIcon } from '@/components/icons.tsx'
+import Image from 'next/image'
 
 export const brand = {
   name: 'Bahi',
@@ -39,6 +42,10 @@ export const metadata = {
   description: brand.description,
 }
 
+<div className="max-w-2xl">
+  <Image src={imageFirst} alt="Bahi Café" />
+</div>
+
 ## Our Story
 
 Opened in 2024, Bahi Café is a unique destination in Shmeisani that blends nostalgia with modern hospitality. Designed as a tribute to Amman’s golden era of the 1970s and 1980s, Bahi combines retro sophistication with contemporary simplicity. Known for its Levantine inspired menu, specialty teas, and refined design, the café has quickly become a cultural landmark in one of the city’s oldest neighborhoods.
@@ -49,11 +56,19 @@ The space is inspired by the design sensibilities of the 70s and 80s, with warm 
 
 The menu is refined yet approachable, focused on comfort, freshness, and familiarity. It includes salads, seasonal soups, omelettes, and sandwiches, all prepared with care and inspired by Levantine flavors. Omelettes are served with arugula and grilled vegetables. Sandwiches are made to order on house baked bread, and salads shift with the produce we enjoy working with.
 
+<div className="max-w-2xl">
+  <Image src={imageHero} alt="Bahi Café" />
+</div>
+
 Desserts are rich in memory and texture, drawing on tahini, saffron, and nuts in ways that feel both nostalgic and new. The cake counter features a rotating selection of classics and house favorites, designed to pair naturally with tea or coffee and to linger over.
 
 The drink menu draws on the classics, placing tea at the center of the café experience. From strong black brews to soft herbal infusions, tea is treated with attention and care, served alongside a concise selection of coffee and seasonal drinks. A specialty of the café is khader tea (شاي مخدر), a long brewed black tea that is slow to prepare and slower to drink. It anchors a table, opens space for conversation, and holds silence just as easily. Familiar, generous, and deeply tied to local ritual, it reflects the pace and presence we aim to offer in everything at Bahi.
 
 At its core, Bahi is a space to slow down. To gather or to be alone. To read, to talk, or to simply sit with something good. It is a space made for Amman, one that honors the past without losing sight of now.
+
+<div className="max-w-2xl">
+  <Image src={imageBahi} alt="Bahi Café" />
+</div>
 
 ## The Spirit of Bahi
 

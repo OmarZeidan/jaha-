@@ -2,6 +2,8 @@ import logo from '@/images/logos/rumi-logo.svg'
 import imageHero from './hero-2.jpg'
 import imageHero1 from './hero.webp'
 import imageHero2 from './hero-1.jpg'
+import imageFirst from './rumi-1.jpg'
+import imageSecond from './rumi-2.jpg'
 import { InstagramIcon, GoogleIcon } from '@/components/icons.tsx'
 import Image from 'next/image'
 
@@ -44,6 +46,10 @@ export const metadata = {
   description: brand.description,
 }
 
+<div className="max-w-2xl">
+  <Image src={imageFirst} alt="Rumi Deli" />
+</div>
+
 ## Our Story
 
 Established in 2013 in Jabal Al Lweibdeh, Rumi Café quickly became one of Amman’s most
@@ -58,6 +64,10 @@ neighborhood café. At the time, the idea of a casual walk-in café with charact
 was still uncommon. Rumi brought the quiet charm of sidewalk cafés to Jabal Al Lweibdeh,
 offering a space that felt grounded, warm, and quietly elegant.
 
+<div className="max-w-2xl">
+  <Image src={imageSecond} alt="Rumi - Jordan" />
+</div>
+
 The vision was never about trends. It was about creating a place where people could gather
 over a well-made cup of coffee or tea. A place that allowed for pause, conversation, and the
 kind of presence that often gets lost in the pace of city life.
@@ -69,7 +79,7 @@ people feel welcome and at ease. Over time, Rumi grew into more than a café. It
 daily rhythm for many and a backdrop for countless shared moments.
 
 <div className="max-w-2xl">
-  <Image src={imageHero} alt="" unoptimized />
+  <Image src={imageHero} alt="" />
 </div>
 
 Coffee and tea are at the heart of the Rumi experience. From Turkish coffee and cardamom
@@ -84,7 +94,7 @@ is made with quality ingredients, prepared simply, and served in a way that invi
 and conversation.
 
 <div className="max-w-2xl">
-  <Image src={imageHero1} alt="" unoptimized />
+  <Image src={imageHero1} alt="" />
 </div>
 
 In July 2025, we opened Rumi Deli just steps away from the original café. This space
@@ -93,10 +103,6 @@ is built around a central idea: bread as craft. We bake our own loaves daily usi
 fermentation and a slow process that brings depth and texture to every bite. The sandwiches
 and baked goods are inspired by local flavors, like zaatar mutabbaq, sourdough manaqeesh
 with local white cheese, and labneh with makdoos and olives.
-
-<div className="max-w-2xl">
-  <Image src={imageHero2} alt="" unoptimized />
-</div>
 
 Rumi remains true to what it set out to be: a place that values good ingredients, thoughtful
 design, and real human connection. A café that continues to evolve while staying rooted in
