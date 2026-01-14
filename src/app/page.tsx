@@ -13,12 +13,12 @@ import { Testimonial } from '@/components/Testimonial'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { SocialMedia } from '@/components/SocialMedia'
-import { default as logosImage } from '@/images/clients/logos.png'
+import imageAllBrandsLogos from '@/images/all-brands-logos.png'
 import logoJahangir from '@/images/jahangir-logo-english.webp'
 import imageServices from '@/images/rumi-1.jpg'
 import { type Brand, type MDXEntry, loadBrands } from '@/lib/mdx'
 
-function OurBrandsFeature() {
+function OurBrandsFeatureBox() {
   return (
     <div className="relative mt-24 bg-jaha px-6 py-12">
       <Container>
@@ -31,7 +31,7 @@ function OurBrandsFeature() {
         <FadeInStagger faster>
           <div className="flex items-center justify-center">
             <div className="mx-auto mt-16 max-w-2xl">
-              <Image src={logosImage} alt={'brands'} unoptimized />
+              <Image src={imageAllBrandsLogos} alt={'All brands-logos image'} />
             </div>
           </div>
         </FadeInStagger>
@@ -49,8 +49,8 @@ function Brands({ brands }: { brands: Array<MDXEntry<Brand>> }) {
           <span className="font-black text-rumiPrimary"> Rumi</span>, pizza at
           <span className="font-black text-olivaPrimary"> Oliva</span>, fresh
           breads and sandwiches at{' '}
-          <span className="font-black text-rumiPrimary"> Rumi Deli</span>, or the
-          retro charm of{' '}
+          <span className="font-black text-rumiPrimary"> Rumi Deli</span>, or
+          the retro charm of{' '}
           <span className="font-black text-bahiPrimary"> Bahi</span>, our brands
           share one spirit: celebrating culture, community, and presence.
         </p>
@@ -191,7 +191,7 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
-      <OurBrandsFeature />
+      <OurBrandsFeatureBox />
 
       <Services />
 
